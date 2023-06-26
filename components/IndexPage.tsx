@@ -27,7 +27,7 @@ export default function IndexPage(props: IndexPageProps) {
       <Layout preview={preview} loading={loading}>
         <Container>
           <BlogHeader title={title} description={description} level={1} />
-          <IntroTemplate />
+          <div className="flex items-center justify-center text-4xl font-bold py-32 min-h-[50vh] bg-slate-100 text-slate-500">Hero content here. Use your imagination.</div>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
