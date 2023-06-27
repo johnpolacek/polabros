@@ -4,9 +4,10 @@ import Layout from 'components/BlogLayout'
 import HeroPost from 'components/HeroPost'
 import IndexPageHead from 'components/IndexPageHead'
 import MoreStories from 'components/MoreStories'
-import IntroTemplate from 'intro-template'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
+
+import Panorama from './Panorama'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -25,21 +26,29 @@ export default function IndexPage(props: IndexPageProps) {
       <IndexPageHead settings={settings} />
 
       <Layout preview={preview} loading={loading}>
-        <Container>
-          <BlogHeader title={title} description={description} level={1} />
-          <div className="flex items-center justify-center text-4xl font-bold py-32 min-h-[50vh] bg-slate-100 text-slate-500">Hero content here. Use your imagination.</div>
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+        <div className="relative">
+          <Panorama
+            imageUrl="/images/bgr-dreamscape.jpg"
+            className="absolute inset-0 z-10"
+          />
+          <div className="relative z-20">
+            <Container>
+              <BlogHeader title={title} description={description} level={1} />
+              <div className="flex min-h-[50vh] items-center justify-center py-32 text-4xl font-bold"></div>
+              {heroPost && (
+                <HeroPost
+                  title={heroPost.title}
+                  coverImage={heroPost.coverImage}
+                  date={heroPost.date}
+                  author={heroPost.author}
+                  slug={heroPost.slug}
+                  excerpt={heroPost.excerpt}
+                />
+              )}
+              {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            </Container>
+          </div>
+        </div>
       </Layout>
     </>
   )

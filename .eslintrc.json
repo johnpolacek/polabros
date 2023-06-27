@@ -1,7 +1,15 @@
 {
-  "extends": "next",
-  "plugins": ["simple-import-sort"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "simple-import-sort"
+  ],
   "rules": {
+    "prettier/prettier": "error",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
     "react-hooks/exhaustive-deps": "error"
