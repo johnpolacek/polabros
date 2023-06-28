@@ -24,6 +24,21 @@ export default function Home() {
         >
           POLABROS
         </h1>
+        <div className="fade-in-3 animation-delay-2 text-black text-center italic py-32">
+          <iframe
+            width="640"
+            height="360"
+            style={{ borderRadius: "8px" }}
+            src="https://www.youtube.com/embed/GiiYwL2nO0Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div className="pt-1">
+            Real archival footage of Polabros 1st attempt to launch a product
+          </div>
+        </div>
       </div>
     </main>
   );
