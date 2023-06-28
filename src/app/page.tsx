@@ -36,7 +36,7 @@ export default function Home() {
             allowfullscreen
           ></iframe>
           <div className="pt-1">
-            Real archival footage of Polabros 1st attempt to launch a product
+            Actual archival footage of Polabros 1st attempt to launch a product
           </div>
         </div>
       </div>

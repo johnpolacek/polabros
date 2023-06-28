@@ -54,6 +54,15 @@ const Panorama: React.FC<PanoramaProps> = ({ imageUrl, className }) => {
     };
     animate();
 
+    // Window resize handler
+    const onWindowResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener("resize", onWindowResize);
+
     return () => {
       // Clean up on unmount
       geometry.dispose();
