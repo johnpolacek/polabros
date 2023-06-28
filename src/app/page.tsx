@@ -8,23 +8,24 @@ export default function Home() {
         className="absolute inset-0 z-10"
       />
       <div className="flex items-center flex-col relative z-20">
-        <h2
-          className="fade-in-2 animation-delay-2 py-16 text-white max-w-[360px] text-center text-xl"
-          style={{
-            textShadow: "0 0 8px rgba(0,0,139,.5), 0 0 4px rgba(0,0,139,.25)",
-          }}
-        >
-          Two wild and crazy Polacek Brothers making web applications together.
-        </h2>
         <h1
-          className="fade-in-3 animation-delay-2 text-8xl font-bold text-white"
+          className="fade-in-3 animation-delay-2 text-8xl font-bold text-white pt-32 pb-8"
           style={{
             textShadow: "0 0 48px rgba(0,0,139,.5), 0 0 24px rgba(0,0,139,.25)",
           }}
         >
           POLABROS
         </h1>
-        <div className="fade-in-3 animation-delay-2 text-black text-center italic py-32">
+        <h2
+          className="fade-in-2 animation-delay-2 text-white max-w-[360px] text-center text-xl"
+          style={{
+            textShadow:
+              "0 0 16px rgba(0,0,139,.25), 0 0 4px rgba(0,0,139,.25), 0 0 2px rgba(0,0,139,1)",
+          }}
+        >
+          Two wild and crazy Polacek Brothers making web applications together.
+        </h2>
+        <div className="fade-in-3 animation-delay-2 text-black text-center italic py-24">
           <iframe
             width="640"
             height="360"
