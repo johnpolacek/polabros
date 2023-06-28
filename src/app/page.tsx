@@ -31,9 +31,8 @@ export default function Home() {
             style={{ borderRadius: "8px" }}
             src="https://www.youtube.com/embed/GiiYwL2nO0Y"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <div className="pt-1">
             Actual archival footage of Polabros 1st attempt to launch a product
