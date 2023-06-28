@@ -2,4 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.fade-in-2 {
+  opacity: 0;
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+}
 
+.fade-in-4 {
+  opacity: 0;
+  animation: fadeIn ease 4s;
+  animation-fill-mode: forwards;
+}
+
+.animation-delay-2 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3 {
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
