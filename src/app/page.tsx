@@ -18,7 +18,7 @@ export default function Home() {
           />
         </h1>
         <h2
-          className="text-white max-w-[360px] text-center text-xl"
+          className="pt-8 text-white max-w-[640px] text-center text-3xl font-extrabold"
           style={{
             textShadow:
               "0 0 16px rgba(0,0,139,.25), 0 0 4px rgba(0,0,139,.25), 0 0 2px rgba(0,0,139,1)",
