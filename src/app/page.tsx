@@ -6,16 +6,16 @@ export default function Home() {
     <main className="relative fade-in-1 animation-delay-1">
       <Panorama
         imageUrl="/images/bgr-dreamscape.jpg"
-        className="fixed top-0 left-0 inset-0 z-10"
+        className="fixed top-0 left-0 inset-0 z-10 opacity-70"
       />
-      <div className="flex items-center flex-col relative z-20 fade-in animation-delay-2 pb-64">
-        <h1
-          className="text-8xl font-bold text-white pt-32 pb-8"
-          style={{
-            textShadow: "0 0 48px rgba(0,0,139,.5), 0 0 24px rgba(0,0,139,.25)",
-          }}
-        >
-          POLABROS
+      <div className="flex items-center flex-col relative z-20 fade-in animation-delay-2 pt-32 pb-64 max-w-[1000px] mx-auto">
+        <h1>
+          <Image
+            width={3087}
+            height={822}
+            src="/images/polabros-logo-horizontal-white.svg"
+            alt="Polabros, Established 1976"
+          />
         </h1>
         <h2
           className="text-white max-w-[360px] text-center text-xl"
